@@ -5,7 +5,8 @@ options:
     - CLOUDSDK_CONTAINER_CLUSTER=cbd-mad-demo
     - ENV=${_ENV}
 steps:
-  - name: gcr.io/$PROJECT_ID/skaffold:alpha
+  - id: 'build-grpc-server'
+    name: gcr.io/$PROJECT_ID/skaffold:alpha
     args: ['build', '-f=skaffold.yaml']
 timeout: 300s
-tags: ['grpc-server']
+tags: ['grpc-server-build']
