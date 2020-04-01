@@ -3,7 +3,6 @@ options:
   env:
     - CLOUDSDK_COMPUTE_ZONE=us-east4-a
     - CLOUDSDK_CONTAINER_CLUSTER=cbd-mad-demo
-    - ENV=${_ENV}
 steps:
   - id: 'render grpc'
     name: gcr.io/$PROJECT_ID/skaffold:alpha
