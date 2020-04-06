@@ -1,8 +1,8 @@
 options:
   substitution_option: 'ALLOW_LOOSE'
   env:
-    - CLOUDSDK_COMPUTE_ZONE=us-east4-a
-    - CLOUDSDK_CONTAINER_CLUSTER=cbd-mad-demo
+    - CLOUDSDK_COMPUTE_ZONE=${_ZONE}
+    - CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}
     - ENV=${_ENV}
 steps:
   - id: 'build-grpc-server'
