@@ -1,0 +1,5 @@
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    args: ['container', 'images', 'add-tag', 'gcr.io/$PROJECT_ID/grpc-server:dev','gcr.io/$PROJECT_ID/grpc-server:prod']
+timeout: 300s
+tags: ['grpc-server-tag','${_ENV}']

@@ -18,4 +18,4 @@ steps:
     args: ['cp','k8s-grpc-server.yaml','gs://mad-demo-k8s/']
     waitFor: ['render-grpc-server']
 timeout: 400s
-tags: ['grpc-server-render']
+tags: ['grpc-server-render','${_ENV}']
