@@ -1,0 +1,51 @@
+{
+  "id": "6c6373ec-31bd-4eb7-8307-114584b77017",
+  "projectId": "cloud-build-delivery-mad",
+  "status": "WORKING",
+  "source": {
+    "storageSource": {
+      "bucket": "cloud-build-delivery-mad_cloudbuild",
+      "object": "source/1586207276.353547-ab1fff69c2704a829556a02a4aca64c0.tgz",
+      "generation": "1586207276771710"
+    }
+  },
+  "steps": [
+    {
+      "name": "gcr.io/cloud-build-delivery-mad/skaffold:alpha",
+      "args": [
+        "build",
+        "-f=skaffold.yaml"
+      ]
+    }
+  ],
+  "createTime": "2020-04-06T21:07:57.077736329Z",
+  "startTime": "2020-04-06T21:07:58.356301014Z",
+  "timeout": "300s",
+  "logsBucket": "gs://416281961765.cloudbuild-logs.googleusercontent.com",
+  "sourceProvenance": {
+    "resolvedStorageSource": {
+      "bucket": "cloud-build-delivery-mad_cloudbuild",
+      "object": "source/1586207276.353547-ab1fff69c2704a829556a02a4aca64c0.tgz",
+      "generation": "1586207276771710"
+    }
+  },
+  "options": {
+    "substitutionOption": "ALLOW_LOOSE",
+    "logging": "LEGACY",
+    "env": [
+      "CLOUDSDK_COMPUTE_ZONE=us-east4-a",
+      "CLOUDSDK_CONTAINER_CLUSTER=cbd-mad-demo",
+      "ENV=dev"
+    ]
+  },
+  "logUrl": "https://console.cloud.google.com/cloud-build/builds/6c6373ec-31bd-4eb7-8307-114584b77017?project=416281961765",
+  "substitutions": {
+    "_CLUSTER": "cbd-mad-demo",
+    "_ENV": "dev",
+    "_ZONE": "us-east4-a"
+  },
+  "tags": [
+    "grpc-server-build",
+    "dev"
+  ]
+}
