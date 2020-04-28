@@ -8,9 +8,9 @@ import (
 
 	"google.golang.org/grpc"
 
-	rpc "github.com/chrisge4/MAD_demo_API_service/grpc-server/pkg/grpc"
-	"github.com/chrisge4/MAD_demo_API_service/grpc-server/pkg/pb"
-	"github.com/chrisge4/MAD_demo_API_service/grpc-server/pkg/storage"
+	rpc "github.com/chrisge4/mad-demo-grpc-service/pkg/grpc"
+	"github.com/chrisge4/mad-demo-grpc-service/pkg/pb"
+	"github.com/chrisge4/mad-demo-grpc-service/pkg/storage"
 )
 
 const (

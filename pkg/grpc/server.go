@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/chrisge4/MAD_demo_API_service/grpc-server/pkg/pb"
-	"github.com/chrisge4/MAD_demo_API_service/grpc-server/pkg/storage"
+	"github.com/chrisge4/mad-demo-grpc-service/pkg/pb"
+	"github.com/chrisge4/mad-demo-grpc-service/pkg/storage"
 )
 
 type Server struct {

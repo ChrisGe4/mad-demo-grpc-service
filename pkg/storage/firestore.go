@@ -10,7 +10,7 @@ import (
 
 	"cloud.google.com/go/firestore"
 
-	"github.com/chrisge4/MAD_demo_API_service/grpc-server/pkg/pb"
+	"github.com/chrisge4/mad-demo-grpc-service/pkg/pb"
 )
 
 type Firestore struct {
